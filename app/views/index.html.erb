@@ -1,0 +1,8 @@
+<h1>All movies</h1>
+      <ul class="list-group mb-3">
+        <% @movies.each do |movie| %>
+          <li class="list-group-item">
+            <%= link_to movie.name, movie_path(movie) %>
+          </li>
+          <% end %>
+      </ul>
