@@ -1,8 +1,13 @@
+<div class= "container">
+
 <h1>All movies</h1>
       <ul class="list-group mb-3">
-        <% @movies.each do |movie| %>
+        <% @list.movies.each do |movie| %>
           <li class="list-group-item">
-            <%= link_to movie.name, movie_path(movie) %>
+          <p>
+          <%= movie.title %>
+          </p>
           </li>
           <% end %>
       </ul>
+</div>
